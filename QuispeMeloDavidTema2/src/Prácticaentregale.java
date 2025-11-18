@@ -39,9 +39,39 @@ public class Prácticaentregale {
 				System.out.println("Edad:" + edad(añonacido));
 				System.out.println("Tipo de usuario:"); 
 				typeuser(añonacido);
+				plataformafav(plataforma);
+				premium(suscripción);
 				break;
 				case 2:
+				int añonacido2=leerint("Introduzca su año de nacimiento:");
+				System.out.println("Edad:" + edad(añonacido2));
+				etiqueta(añonacido2);
+				break;	
+				case 3:
+				main();
+				salirusuarios = true;
+				break;
+				default:
+				System.out.println("Opción no válida");
+				}
+				}while(!salirusuarios);
+		}
+		public static void case2()throws NumberFormatException, IOException {
+			boolean salirusuarios = false;
+			do {
 				
+				System.out.println("--- CATÁLOGO DE JUEGOS ---");
+				System.out.println("1. Añadir juegos a la biblioteca");
+				System.out.println("2. Calcular espacio total ocupado");
+				System.out.println("3. Volver al menú principal");
+				int opcion1 = leerint("Elige una opción: ");
+				switch (opcion1) {
+				case 1:
+				int numjuegos=leerint("¿Cuántos juegos quieres añadir?: ");	
+				
+				break;
+				case 2:
+		
 				break;	
 				case 3:
 				main();
@@ -69,8 +99,7 @@ public class Prácticaentregale {
 				case1();
 				break;
 				case 2:
-			
-	             
+				case2();
 				break;
 				case 3:
 				
@@ -102,7 +131,6 @@ public class Prácticaentregale {
 			int resultado=año-numero;
 			return resultado;
 		}
-		
 		public static void typeuser(int numero) {
 		if (edad(numero)<=17) {
 			System.out.println("Junior Game");
@@ -111,9 +139,40 @@ public class Prácticaentregale {
 		}else {
 			System.out.println("Master Gamer");
 		}
-			
+		}
+		
+		public static void plataformafav(String mensaje) {
+		for (String i=mensaje;i==mensaje;);
+			if (mensaje.equals("PC")) {
+				System.out.println("Plataforma favorita: PC");
+			}else if (mensaje.equals("PlayStation")) {
+				System.out.println("Plataforma favorita: PlayStation");
+			}else if (mensaje.equals("Nintendo")){
+				System.out.println("Plataforma favorita: Nintendo");
+			}else if (mensaje.equals("Xbox")) {
+				System.out.println("Plataforma favorita: Xbox");
+			}else  {
+				System.out.println("Plataforma incorrecta");
+			}
+		}
+		public static void premium(String mensaje) {}
+		
+		public static void etiqueta(int numero) {
+		if (edad(numero)>=16&&edad(numero)<18) {
+			System.out.println("Puede jugar a juegos con etiqueta: PEGI 16");
+		}else if (edad(numero)>=18) {
+			System.out.println("Puede jugar a juegos con etiqueta: PEGI 18");
+		}else if (edad(numero)>=12&& edad(numero)<16) {
+			System.out.println("Puede jugar a juegos con etiqueta: PEGI 12");
+		}else if (edad(numero)>=7&& edad(numero)<12) {
+			System.out.println("Puede jugar a juegos con etiqueta: PEGI 7");
+		}else  {
+			System.out.println("Puede jugar a juegos con etiqueta: PEGI 3");
 		}
 		}
-
-
-	
+		public static void biblioteca(int numero) throws NumberFormatException, IOException {
+		
+		for (int i=0;i==numero;i++);
+		String nombrejuego=leerint1("Nombre del juego: ");
+		}
+}
