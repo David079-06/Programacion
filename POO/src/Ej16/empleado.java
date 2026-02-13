@@ -31,7 +31,6 @@ public class empleado {
 	}
 		}	
  }
- 
  public void pedirHorasEmpleado () {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		boolean datosOK = false;
@@ -40,7 +39,6 @@ public class empleado {
 		double horas;
 	try {
 		do {
-			
 			System.out.println("Introduce el dia de la semana (0-Lunes, 6-Domingo): ");
 		    dia= Integer.parseInt(leer.readLine());
 			if((dia)<0 || (dia)>6) {
