@@ -13,7 +13,7 @@ public class empleado {
  private double tarifah;
  
  
- public void PedirDatosempleado (int id) {
+ public void pedirdatosempleado (int id) {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		boolean datosOK = false;
 		while (!datosOK) {
@@ -32,7 +32,7 @@ public class empleado {
 		}	
  }
  
- public void PedirDatosHoras () {
+ public void pedirdatoshoras () {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		boolean datosOK = false;
 		while (!datosOK) {
@@ -71,7 +71,7 @@ public class empleado {
 	}
 		}	
 }
- public void MostrarSemana () throws IOException {
+ public void mostrarsemana () throws IOException {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 	System.out.println("--- Resumen Semanal de " + nombre + " ---");
 	double sumaTotal = 0;
