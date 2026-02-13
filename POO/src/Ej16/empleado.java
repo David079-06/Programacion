@@ -6,14 +6,14 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Empleado {
+public class empleado {
  private int ID;
- private String nombreEmpleado;
- private double[] horasSemanales = new double [7];
- private double tarifaHora;
+ private String nomb;
+ private double[] horatrab = new double [7];
+ private double tarifah;
  
  
- public void pedirDatosEmpleado (int id) {
+ public void pedirdatosempleado (int id) {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		boolean datosOK = false;
 		while (!datosOK) {
