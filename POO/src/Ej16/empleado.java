@@ -7,12 +7,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class empleado {
- private int ID;
- private String nomb;
- private double[] horatrab = new double [7];
- private double tarifah;
- 
- 
+private int id;
+    private String nombre;
+    private double[] horasSemanales = new double[7];
+    private double tarifaHora;
+	
  public void pedirdatosempleado (int id) {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		boolean datosOK = false;
