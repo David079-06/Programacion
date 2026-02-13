@@ -10,7 +10,7 @@ public class empleado {
  private int id;
  private String nomb;
  private double[] horatrab = new double [7];
- private double tarhora;
+ private double tarifah;
  
  
  public void PedirDatosempleado (int id) {
