@@ -102,6 +102,7 @@ public class empleado {
 			return suma;
 				
 	}
+
 	 
 	 public  void tienedescanso () throws IOException {
 			BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
