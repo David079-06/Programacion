@@ -6,14 +6,14 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class empleado {
+public class Empleado {
  private int id;
  private String nomb;
  private double[] horatrab = new double [7];
  private double tarifah;
  
  
- public void pedirdatosempleado (int id) {
+ public void pedirDatosEmpleado (int id) {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		boolean datosOK = false;
 		while (!datosOK) {
@@ -32,7 +32,7 @@ public class empleado {
 		}	
  }
  
- public void pedirdatoshoras () {
+ public void pedirHorasEmpleado () {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 		boolean datosOK = false;
 		while (!datosOK) {
@@ -71,7 +71,7 @@ public class empleado {
 	}
 		}	
 }
- public void mostrarsemana () throws IOException {
+ public void mostrarSemana () throws IOException {
 		BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 	System.out.println("--- Resumen Semanal de " + nombre + " ---");
 	double sumaTotal = 0;
