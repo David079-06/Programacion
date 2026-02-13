@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Empleado {
- private int id;
- private String nomb;
- private double[] horatrab = new double [7];
- private double tarifah;
+ private int ID;
+ private String nombreEmpleado;
+ private double[] horasSemanales = new double [7];
+ private double tarifaHora;
  
  
  public void pedirDatosEmpleado (int id) {
