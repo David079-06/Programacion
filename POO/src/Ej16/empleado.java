@@ -105,9 +105,9 @@ public class empleado {
 	 public  void tienedescanso () throws IOException {
 			BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 			double suma=0;
-			String descanso="";
+			String des="";
 			try {
-				for (double horas :horastrabajadas) 
+				for (double horas :horas_trabajadas) 
 				if(horas==0) {
 					System.out.println("Empleado con ID "+ getId());
 					System.out.println("Tiene descando" + getnombre());
