@@ -14,26 +14,31 @@ public class Principal {
 		 
 		  boolean salir = false;
 			do {
-				System.out.println("\n== CONTROL HORARIO ==");
+				System.out.println("== CONTROL HORARIO ==");
+				
 				System.out.println("1.Registrar empleado");
+				
 				System.out.println("2.Registrar horas");
+				
 				System.out.println("3.Ver semana");
+				
 				System.out.println("4.Calcular salario");
+				
 				System.out.println("5.Empleado del mes");
+				
 				System.out.println("6.Detectar descanso");
+				
 				System.out.println("7.Salir");
 				System.out.println("Introduce una opcion: ");
 
 				int opcion = -1;
 				boolean datosOK = false;
 				while (!datosOK) {
-					try {
-						opcion = Integer.parseInt(LEER.readLine());
+					try {opcion = Integer.parseInt(LEER.readLine());
 					} catch (NumberFormatException | IOException e) {
 						e.printStackTrace();
 					}
-					datosOK = true;
-				}
+					datosOK = true;}
 
 				switch (opcion) {
 				case 1:
@@ -63,7 +68,6 @@ public class Principal {
 				}
 
 			} while (!salir);
-		  
 	}
 	private static void Regristoemplado(ArrayList<empleado> Empresa) throws IOException {
 		boolean parar = false;
