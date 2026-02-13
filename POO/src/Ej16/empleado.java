@@ -8,9 +8,9 @@ import java.util.Random;
 
 public class empleado {
  private int id;
- private String nombre;
- private double[] horastrabajadas = new double [7];
- private double tarifahora;
+ private String nomb;
+ private double[] horatrab = new double [7];
+ private double tarhora;
  
  
  public void PedirDatosempleado (int id) {
