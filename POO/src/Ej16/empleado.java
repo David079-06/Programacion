@@ -107,7 +107,7 @@ public class empleado {
 			double suma=0;
 			String des="";
 			try {
-				for (double horas :horas_trabajadas) 
+				for (double horas :h_trab) 
 				if(horas==0) {
 					System.out.println("Empleado con ID "+ getId());
 					System.out.println("Tiene descando" + getnombre());
