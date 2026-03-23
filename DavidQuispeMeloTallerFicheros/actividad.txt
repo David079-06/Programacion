@@ -1,0 +1,6 @@
+---DATOS ACTIVIDAD---
+Id: 3
+Nombre: adada
+Sección: chiqui
+Número de plazas: 30
+Precio: 40.0
